@@ -1,0 +1,215 @@
+@font-face {
+  	font-family: 'Roboto', sans-serif;
+  	font-style: normal;
+  	font-weight: 400;
+  	font-display: block;
+  	display: swap;
+  	src: url("../fonts/Roboto-Regular.ttf") format("ttf"); 
+}
+@font-face {
+  	font-family: 'Roboto', sans-serif;
+  	font-style: italic;
+  	font-weight: 400;
+  	font-display: block;
+  	display: swap;
+  	src: url("../fonts/Roboto-Italic.ttf") format("ttf"); 
+}
+@font-face {
+  	font-family: 'Roboto', sans-serif;
+  	font-style: normal;
+  	font-weight: 500;
+  	font-display: block;
+  	display: swap;
+  	src: url("../fonts/Roboto-Medium.ttf") format("ttf"); 
+}
+@font-face {
+  	font-family: 'Roboto', sans-serif;
+  	font-style: italic;
+  	font-weight: 500;
+  	font-display: block;
+  	display: swap;
+  	src: url("../fonts/Roboto-MediumItalic.ttf") format("ttf"); 
+}
+@font-face {
+  	font-family: 'Roboto', sans-serif;
+  	font-style: normal;
+  	font-weight: 700;
+  	font-display: block;
+  	display: swap;
+  	src: url("../fonts/Roboto-MediumItalic.ttf") format("ttf"); 
+}
+@font-face {
+  	font-family: 'Roboto', sans-serif;
+  	font-style: italic;
+  	font-weight: 700;
+  	font-display: block;
+  	display: swap;
+  	src: url("../fonts/Roboto-BoldItalic.ttf") format("ttf"); 
+}
+@font-face {
+  	font-family: 'Roboto', sans-serif;
+  	font-style: normal;
+  	font-weight: 900;
+  	font-display: block;
+  	display: swap;
+  	src: url("../fonts/Roboto-Black.ttf") format("ttf"); 
+}
+@font-face {
+  	font-family: 'Roboto', sans-serif;
+  	font-style: italic;
+  	font-weight: 900;
+  	font-display: block;
+  	display: swap;
+  	src: url("../fonts/Roboto-BlackItalic.ttf") format("ttf"); 
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #000000;
+	font-size: 16px;
+	line-height: 26px;
+	color: #ffffff;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	height: 100%;
+}
+img {
+	max-width: 100%;
+}
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 90px;
+	line-height: 110px;
+}
+
+.header_wrapp {
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+}
+.header_main {
+	padding: 0 15px;
+}
+
+
+#sliderHome .carousel-item > .slider_img {
+	opacity: 0.6;
+	height: 100vh;
+	width: 100%;
+}
+#sliderHome .carousel-item .slider_main {
+	text-align: left;
+	top: 35%;
+	bottom: unset;
+}
+#sliderHome .slider_main .slider_content {
+	position: relative;
+}
+#sliderHome .slider_main .slider_content .sliderimg {
+    position: absolute;
+    z-index: 1;
+    left: -190px;
+    top: -97px;
+}
+#sliderHome .slider_main .slider_content h1 {
+	position: relative;
+	z-index: 999999;
+}
+#sliderHome button {
+    bottom: 60px;
+    right: 70px;
+    height: auto;
+    top: unset;
+    width: auto;
+}
+#sliderHome .carousel-control-prev {
+	left: unset;
+	right: 100px;
+}  
+.offcanvas-top {
+	height: 100vh;
+	background-color: #000;
+	z-index: 999999;
+	padding: 0 30px;
+}
+nav.navbar .navbar-toggler {
+    border: 1px solid #f5f5f5;
+}
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+.offcanvas-header button {
+    background-color: #fff;
+    filter: invert(1);
+}
+.offcanvas-body .navbar-nav li a {
+    color: #ffffff !important;
+    font-size: 30px;
+    padding: 20px 0;
+}
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+@media only screen and ( min-width: 992px ) and ( max-width: 1199px ) {
+
+	#sliderHome .slider_main .slider_content h1 {
+		font-size: 78px;
+    	line-height: 88px;
+	}
+
+}
+
+
+@media only screen and ( max-width: 1199px ) {
+
+	#sliderHome .slider_main .slider_content h1 br {
+		display: none;
+	}
+
+}
+
+@media only screen and ( min-width: 768px ) and ( max-width: 991px ) {
+
+	#sliderHome .slider_main .slider_content h1 {
+		font-size: 58px;
+    	line-height: 70px;
+	}
+
+}
+
+
+@media only screen and ( min-width: 577px ) and ( max-width: 767px ) {
+
+	#sliderHome .slider_main .slider_content h1 {
+		font-size: 40px;
+    	line-height: 52px;
+	}
+
+}
+ 
+@media only screen and ( max-width: 576px ) {
+
+	#sliderHome .slider_main .slider_content h1 {
+		font-size: 26px;
+    	line-height: 36px;
+	    position: relative;
+	    top: 40px;
+	}
+	#sliderHome .slider_main .slider_content .sliderimg {
+		top: -30px;
+	}
+
+
+
+}
